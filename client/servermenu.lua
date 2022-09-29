@@ -53,7 +53,7 @@ end)
 -- INPUT SERVER TIME --
 RegisterNetEvent("psr-admin:ServerTimeInput", function()
 
-    local dialog = exports['qbr-input']:ShowInput({
+    local dialog = exports['psr-input']:ShowInput({
         header = "Input Server Time",
         submitText = "Submit",
         inputs = {
@@ -170,7 +170,7 @@ RegisterNetEvent('psr-admin:WeatherPage', function()
             header = "⛅ | Overcast",
             txt = "",
             params = {
-                event = 'qbr-weathersync:server:setWeather',
+                event = 'psr-weathersync:server:setWeather',
                 isServer = true,
                 args = "OVERCAST"
             }
